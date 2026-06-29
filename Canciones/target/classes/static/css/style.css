@@ -1,0 +1,206 @@
+/* --- Estilos base y contenedor central --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #37352f;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+h1, h3 {
+    color: #111111;
+    font-weight: 600;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+h3 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* --- Estilos generales para enlaces de navegación --- */
+a {
+    color: #2383e2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #1a61a8;
+    text-decoration: underline;
+}
+
+/* --- Estilos para Tablas (canciones.jsp) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding: 12px 8px;
+    text-align: left;
+    border-bottom: 1px solid #ededed;
+}
+
+th {
+    font-weight: 500;
+    color: #787774;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+tbody tr:hover {
+    background-color: #fbfbfa;
+}
+
+/* --- Estilos para Listas --- */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+ul li {
+    padding: 14px 20px;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 0.95rem;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul li strong {
+    color: #787774;
+    display: inline-block;
+    width: 120px;
+    font-weight: 500;
+}
+
+/* --- Formularios (agregar y editar) --- */
+form:not(.form-boton) {
+    background-color: #f7f9fc;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+form:not(.form-boton) label {
+    font-weight: 500;
+    color: #37352f;
+    margin-bottom: 6px;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+form:not(.form-boton) label:first-of-type {
+    margin-top: 0;
+}
+
+/* Inputs, Selects y Textareas */
+input[type="text"],
+select,
+textarea {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #ffffff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2383e2;
+    box-shadow: 0 0 0 3px rgba(35, 131, 226, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Mensajes de error de Spring */
+form span {
+    color: #d93025;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    display: block;
+}
+
+/* --- Botones --- */
+input[type="submit"], 
+button[type="submit"], 
+.btn {
+    background-color: #2383e2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 25px;
+    display: inline-block; 
+    text-align: center;
+    text-decoration: none; 
+    align-self: flex-start;
+}
+
+input[type="submit"]:hover, 
+button[type="submit"]:hover, 
+.btn:hover {
+    background-color: #1a61a8;
+    color: #ffffff;
+    text-decoration: none; 
+}
+
+/* --- Ajustes específicos para botones en detalleCancion.jsp --- */
+.btns-edit-delete  {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.form-boton {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    margin: 0;
+    display: block; 
+}
+
+.form-boton button {
+    margin-top: 0;
+}
+
+.btn {
+    margin-right: 10px;
+    margin-top: 10px;
+}
